@@ -1,0 +1,90 @@
+.container-fluid {
+  padding: 0;
+}
+.container-fluid .header {
+  background-image: url("../images/copybook.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container-fluid .header nav {
+  position: sticky;
+  width: 100%;
+  height: 70px;
+  background-color: #2F3647;
+  border-top: 4px solid #159DC5;
+  opacity: 0.9;
+}
+.container-fluid .header nav .checkbtn {
+  color: white;
+  font-size: 25px;
+  float: right;
+  line-height: 50px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+.container-fluid .header nav #check {
+  display: none;
+}
+.container-fluid .header nav .nav-logo {
+  width: 100px;
+  padding: 0;
+}
+.container-fluid .header nav .nav-logo img {
+  width: 100%;
+}
+.container-fluid .header nav ul {
+  float: right;
+  margin-right: 20px;
+}
+.container-fluid .header nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5px;
+}
+.container-fluid .header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 11px;
+}
+
+@media screen and (max-width: 991px) {
+  .container-fluid .header nav ul li a {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-fluid .header nav .checkbtn {
+    display: block !important;
+  }
+  .container-fluid .header nav #check:checked ~ ul {
+    left: 0 !important;
+  }
+  .container-fluid .header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #159DC5;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: -1;
+  }
+  .container-fluid .header nav ul li {
+    display: block !important;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .container-fluid .header nav ul li a {
+    font-size: 20px !important;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */

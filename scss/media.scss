@@ -1,0 +1,69 @@
+@media screen and (max-width: 991px) {
+    .container-fluid{
+      .header{
+
+        nav {
+
+          ul{
+
+            li{
+
+              a{
+
+                font-size: 14px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+}
+
+@media screen and (max-width: 768px){
+.container-fluid{
+  .header{
+
+    nav{
+      .checkbtn{
+
+        display: block !important;
+      }
+
+      #check:checked ~ ul {
+        left: 0 !important;
+      }
+
+      ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #159DC5;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: -1;
+
+        li {
+
+          display: block !important;
+          margin: 50px 0;
+          line-height: 30px;
+
+          a {
+
+            font-size: 20px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+}
